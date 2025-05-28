@@ -10,7 +10,7 @@ print(tuple1[-1])
 print(tuple1[1:4])
 
 
-weather =(1,0,1,0,0,1,1,1)
+weather =(1,0,0,0,0,1,0,1)
 sunny=0
 rainy=0
 for i in range(0,8):
