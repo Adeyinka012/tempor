@@ -14,9 +14,9 @@ player=pygame.transform.scale(
 )
 player_rect=player.get_rect(center=(SCREEN_WIDTH//2, SCREEN_HIEGHT//2-30))
 text=pygame.font.Font(None,36).render("Welcome to the game! ", True,(255, 200, 255))
-text_rect=text.get(center=[SCREEN_WIDTH//2, SCREEN_HIEGHT//2+110])
+text_rect=text.get_rect(center=[SCREEN_WIDTH//2, SCREEN_HIEGHT//2+110])
 def game_loop():
-    clock=pygame.time.clock()
+    Clock=pygame.time.Clock()
     running=True
     while running:
         for event in pygame.event.get():
