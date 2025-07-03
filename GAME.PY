@@ -13,4 +13,20 @@ player=pygame.transform.scale(
     pygame.image.load("car.jpeg").convert_alpha(),(200,200)
 )
 player_rect=player.get_rect(center=(SCREEN_WIDTH//2, SCREEN_HIEGHT//2-30))
-text=pygame.font.Font(None,36).render("Welcome to the game! ", True,(254, 294, 255))
+text=pygame.font.Font(None,36).render("Welcome to the game! ", True,(255, 200, 255))
+text_rect=text.get(center=[SCREEN_WIDTH//2, SCREEN_HIEGHT//2+110])
+def game_loop():
+    clock=pygame.time.clock()
+    running=True
+    while running:
+        for event in pygame.event.get():
+            if event .type==pygame.QUIT:
+                running=False
+            display_surface.blit(background_image,(0,0))
+            display_surface.blit(player,player_rect)
+            display_surface.blit(text, text_rect)
+            pygame.display.flip()
+            clock.tick(60)
+        pygame.quit()
+if __name__ == "__main__":
+    game_loop()
