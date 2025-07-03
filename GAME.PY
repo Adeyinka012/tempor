@@ -20,7 +20,7 @@ def game_loop():
     running=True
     while running:
         for event in pygame.event.get():
-            if event .type==pygame.QUIT:
+            if event.type==pygame.QUIT:
                 running=False
             display_surface.blit(background_image,(0,0))
             display_surface.blit(player,player_rect)
