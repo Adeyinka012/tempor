@@ -43,3 +43,16 @@ playerx=PLAYER_STARTX
 playery=PLAYER_STARTX
 
 playerx_change=0
+enemyimg=[]
+enemyx=[]
+enemyy=[]
+enemyy_change=[]
+enemyx_change=[]
+number_enemy=6
+for enemy in range(number_enemy):
+    enemyimg.append(random.randint(0,SCREEN_WIDTH-64))
+    enemyy.append(random.randint(ENEMY_STARTX,ENEMY_STARTY))
+    enemyx_change.append(ENEMY_SPEEDX)
+    enemyy_change.append(ENEMY_SPEEDY)
+    bulletx=0
+    
