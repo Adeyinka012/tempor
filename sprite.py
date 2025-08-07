@@ -45,7 +45,7 @@ class Sprite(pygame.sprite.Sprite):
         global bg_color
         bg_color=random.choice([YELLOW, MAGENTA, ORANGE, WHITE])
         
-all_sprites = pygame.sprite.group()
+all_sprites = pygame.sprite.Group()
 sp1=Sprite(BLUE, 50, 50)
 sp1.rect.x=random.randint(0,480)
 sp1.rect.x=random.randint(0,370)
